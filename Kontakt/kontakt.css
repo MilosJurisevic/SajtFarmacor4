@@ -67,21 +67,19 @@ ul li a span:hover::before {
 } 
 
 .search {
-    /*position: relative; original*/
-    float: right; /*moje*/
+    float: right;
     margin-right:20px;
     width: 40px;
     height: 40px;
     background: #fff;
     border-radius: 40px;
-    transition: 0.5s;
-     /*box-shadow: 0 0 0 5px #2573ef;*/ 
+    /* box-shadow: 0 0 0 5px #2573ef; */
     overflow: hidden;
 }
 
 .icon {
     position: absolute;
-    float: left;
+    float: right;
     margin-right: 20px;
     width: 40px;
     height: 40px;
@@ -95,16 +93,15 @@ ul li a span:hover::before {
 }
 
 .search.active {
-    width: 240px;
+    width: 100px;
 }
 
-.input {
+.search .input {
     position: relative;
     width: 200px;
     height: 40px;
     right: 0;
-    top: 12px;
-    left: 40px;
+    left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,96 +109,59 @@ ul li a span:hover::before {
     
 }
 
-.input input {
-    position:absolute;
-    top: 0;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 12px;
-    pad: 10px;
+
+/* .search .icon ::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #287dfc;
+    border-radius: 50%;
+    transform: translate(-4px, -4px);
 }
 
+.search .icon ::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background:  #287dfc;
+    transform: translate(6px, 6px) rotate(315deg);
+} */
 
-/* TODO: NAPRAVITI OPACITY DA RADI!!! */
-.naslovna4{
+.naslovna {
     position: relative;
-    /* background-image: url("./Naslovna.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
     height: 100vh;
-    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("./Naslovna.jpg");; */
-    
+    background-image: url("./kontaktPozadina.jpg.jpg");
 }
 
-.naslovna4::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./O-Nama.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -99;
-    opacity: 0.6; 
-}
-
-
-p {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 2em;
-    font-style: italic;
-    position: absolute;
-}
-
-.con {
-    background-color:#d9dde0;
-    width: 100%;
-    height: 40vh;
-    position: relative;
-    border: 1px solid #fff;
-
-}
-
-.reklama {
-    position: absolute;
-    width: 300px;
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.gMap {
-    float: right;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-bottom: 50px;
+h1{
+    padding-top: 50px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
 }
 
 .nasKon {
+    margin-top: 30px;
     
-    padding-left: 33%;
-    margin-top: 50px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;*/
 }
 
 .nasKon a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 50%;
+    text-decoration: none;
+    margin: auto;
+    color: #fff;
 }
 
-.nasKon a:hover{
-    color:#33135c;
-    text-decoration:none;
+
+label {
+    height: 2000px;
 }

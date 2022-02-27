@@ -66,20 +66,24 @@ ul li a span:hover::before {
     transform: rotateX(0deg) translateY(0px);
 } 
 
+
+
 .search {
-    float: right;
+    /*position: relative; original*/
+    float: right; /*moje*/
     margin-right:20px;
     width: 40px;
     height: 40px;
     background: #fff;
     border-radius: 40px;
-    /* box-shadow: 0 0 0 5px #2573ef; */
+    transition: 0.5s;
+     /*box-shadow: 0 0 0 5px #2573ef;*/ 
     overflow: hidden;
 }
 
 .icon {
     position: absolute;
-    float: right;
+    float: left;
     margin-right: 20px;
     width: 40px;
     height: 40px;
@@ -93,15 +97,16 @@ ul li a span:hover::before {
 }
 
 .search.active {
-    width: 100px;
+    width: 240px;
 }
 
-.search .input {
+.input {
     position: relative;
     width: 200px;
     height: 40px;
     right: 0;
-    left: 30px;
+    top: 12px;
+    left: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +114,18 @@ ul li a span:hover::before {
     
 }
 
+.input input {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    pad: 10px;
+}
 
-/* .search .icon ::before {
+
+ /*.search .icon ::before {
     content: '';
     position: absolute;
     width: 15px;
@@ -120,7 +135,7 @@ ul li a span:hover::before {
     transform: translate(-4px, -4px);
 }
 
-.search .icon ::after {
+/*.search .icon ::after {
     content: '';
     position: absolute;
     width: 3px;
@@ -212,8 +227,11 @@ p {
 
 
 .con {
-    border: 2px solid green;
-    background-color:#659DBD;
+    background-color:#d9dde0;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    border: 1px solid #fff;
 
 }
 
@@ -233,17 +251,20 @@ p {
 }
 
 .nasKon {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 40%;
-    margin-bottom: 50px;
     
+    padding-left: 33%;
+    margin-top: 50px;
 }
 
 .nasKon a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
 }
 
 .nasKon a:hover{

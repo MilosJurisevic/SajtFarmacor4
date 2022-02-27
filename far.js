@@ -9,6 +9,12 @@ function openPage() {
     var x = document.getElementById("mysearch").value;
 
     if (x === "naslovna") {
-        window.open("/C:/Users/milos/Desktop/FarmaSajt/index.html");
+        window.open("/index.html");
     }
+
+    if (x === "proizvodi") {
+        window.open("/Proizvodi/index.html");
+    }
+
 }
+

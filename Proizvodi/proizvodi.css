@@ -67,19 +67,21 @@ ul li a span:hover::before {
 } 
 
 .search {
-    float: right;
+    /*position: relative; original*/
+    float: right; /*moje*/
     margin-right:20px;
     width: 40px;
     height: 40px;
     background: #fff;
     border-radius: 40px;
-    /* box-shadow: 0 0 0 5px #2573ef; */
+    transition: 0.5s;
+     /*box-shadow: 0 0 0 5px #2573ef;*/ 
     overflow: hidden;
 }
 
 .icon {
     position: absolute;
-    float: right;
+    float: left;
     margin-right: 20px;
     width: 40px;
     height: 40px;
@@ -93,20 +95,31 @@ ul li a span:hover::before {
 }
 
 .search.active {
-    width: 100px;
+    width: 240px;
 }
 
-.search .input {
+.input {
     position: relative;
     width: 200px;
     height: 40px;
     right: 0;
-    left: 30px;
+    top: 12px;
+    left: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
     
+}
+
+.input input {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    pad: 10px;
 }
 
 
@@ -137,3 +150,49 @@ p {
 .galerija:hover {
     border: 1px solid #777;
   }
+
+  .con {
+    background-color:#d9dde0;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    border: 1px solid #fff;
+
+}
+
+.reklama {
+    position: absolute;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gMap {
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.nasKon {
+    
+    padding-left: 33%;
+    margin-top: 50px;
+}
+
+.nasKon a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.nasKon a:hover{
+    color:#33135c;
+    text-decoration:none;
+}
