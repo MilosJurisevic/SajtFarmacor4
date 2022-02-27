@@ -110,73 +110,30 @@ ul li a span:hover::before {
 }
 
 
-/* TODO: NAPRAVITI OPACITY DA RADI!!! */
-.naslovna4{
-    position: relative;
-    /* background-image: url("./Naslovna.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    height: 100vh;
-    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("./Naslovna.jpg");; */
+.naslovna3 {
+    margin: 30px;
+    padding: 30px;
+    background: rgb(248, 247, 247);
+}
+
+.imgP {
+    margin-top: 10px;
+    display: inline-block;
     
 }
-
-.naslovna4::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./O-Nama.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -99;
-    opacity: 0.6; 
-}
-
 
 p {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 2em;
-    font-style: italic;
-    position: absolute;
+    text-align: center;
 }
 
-.reklama {
-    position: absolute;
-    width: 300px;
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.galerija {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
 }
 
-.gMap {
-    float: right;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
-
-.nasKon {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 40%;
-    margin-bottom: 50px;
-    
-}
-
-.nasKon a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.nasKon a:hover{
-    color:#33135c;
-    text-decoration:none;
-}
+.galerija:hover {
+    border: 1px solid #777;
+  }
